@@ -1,6 +1,7 @@
 /**
  * Inject hyperlinks, into the column headers of sortable tables, which sort
  * the corresponding column when clicked.
+ *  https://javascript.plainenglish.io/easy-table-sorting-with-javascript-370d8d97cad8
  */
 var tables = document.querySelectorAll("table.sortable"),
     table,
