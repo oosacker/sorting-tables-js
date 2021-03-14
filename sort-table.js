@@ -3,20 +3,18 @@
  * the corresponding column when clicked.
  *  https://javascript.plainenglish.io/easy-table-sorting-with-javascript-370d8d97cad8
  */
-var tables = document.querySelectorAll("table.sortable"),
-    table,
-    thead,
-    headers,
-    i,
-    j;
+var tables = document.querySelectorAll("table.sortable");
+let table;
+let thead;
+let headers;
 
-for (i = 0; i < tables.length; i++) {
+for (let i = 0; i < tables.length; i++) {
     table = tables[i];
 
     if (thead = table.querySelector("thead")) {
         headers = thead.querySelectorAll("th");
 
-        for (j = 0; j < headers.length; j++) {
+        for (let j = 0; j < headers.length; j++) {
             headers[j].innerHTML = "<a href='#'>" + headers[j].innerText + "</a>";
         }
 
